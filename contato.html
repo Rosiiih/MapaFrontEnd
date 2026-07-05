@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- contato.html — formulário de contato com validação no client-side -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Patrícia Santos — Desenvolvedora Web</title>
+    <meta name="author" content="Patrícia Santos">
+    <meta name="description" content="Entre em contato com Patrícia Santos para projetos de desenvolvimento web, freelances e colaborações.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="contato.html">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="l-header">
+        <nav class="nav bg-grid">
+            <div>
+                <a href="index.html" class="nav_logo">Patrícia Santos</a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_List">
+                    <li class="nav_item"> <a href="index.html" class="nav_link">Home</a> </li>
+                    <li class="nav_item"> <a href="sobre.html" class="nav_link">Sobre</a> </li>
+                    <li class="nav_item"> <a href="habilidade.html" class="nav_link">Habilidades</a> </li>
+                    <li class="nav_item"> <a href="projeto.html" class="nav_link">Projetos</a> </li>
+                    <li class="nav_item"> <a href="contato.html" class="nav_link">Contato</a> </li>
+                </ul>
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main: contato — formulário com campos obrigatórios e validação JS -->
+    <main class="contact">
+        <section class="contact-card">
+            <h2 class="contact-title">Entre em contato</h2>
+            <!-- Formulário: os erros são exibidos abaixo de cada campo pelo script -->
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="contact-name">Nome</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Digite seu nome" required>
+                    <span class="form-error" id="error-name"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" placeholder="Digite seu email" required>
+                    <span class="form-error" id="error-email"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-phone">Telefone</label>
+                    <input type="tel" id="contact-phone" name="phone" placeholder="(99) 99999-9999" required>
+                    <span class="form-error" id="error-phone"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Mensagem</label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                    <span class="form-error" id="error-message"></span>
+                </div>
+                <button type="submit" class="form-submit-button">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

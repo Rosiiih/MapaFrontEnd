@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+    index.html — Página inicial
+    - Exibe apresentação, imagem e link para contato
+    - Observações: manter títulos e meta tags atualizados para SEO
+-->
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Patrícia Santos">
+        <meta name="description" content="Portfólio de Patrícia Santos — desenvolvedora web. Projetos responsivos e soluções front-end modernas.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="index.html">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta property="og:title" content="Patrícia Santos — Portfólio">
+        <meta property="og:description" content="Portfólio de Patrícia Santos — desenvolvedora web. Veja projetos, habilidades e contato.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="index.html">
+        <meta property="og:image" content="img/Patr%C3%ADcia%20Santos.png">
+        <title>Patrícia Santos — Portfólio</title>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Patrícia Santos",
+            "jobTitle": "Desenvolvedora Web",
+            "url": "index.html"
+        }
+        </script>
+</head>
+<body>
+    <!-- Header / Navigation: contém o logo e links principais do site -->
+    <header class="l-header">
+        <nav class="nav bg-grid">
+            <div>
+                <a href="index.html" class="nav_logo">Patrícia Santos</a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                  <ul class="nav_List">
+                    <li class="nav_item"> <a href="index.html" class="nav_link" >Home</a> </li>
+                        <li class="nav_item"> <a href="sobre.html" class="nav_link" >Sobre</a> </li>
+                            <li class="nav_item"> <a href="habilidade.html" class="nav_link" >Habilidades</a> </li>
+                                <li class="nav_item"> <a href="projeto.html" class="nav_link" >Projetos</a> </li>
+                                    <li class="nav_item"> <a href="contato.html" class="nav_link" >Contato</a> </li>
+                  </ul>                 
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Main content: hero / apresentação -->
+    <main class="1-main">
+        <section class="home bg-grid" id="home">
+            <div class="home_img">
+                <img src="img/Patrícia Santos.png" alt="imagem de Patrícia" class="profile-picture">
+            </div>
+
+           <div class="home_data">
+                <!-- Título com efeito typewriter; o texto é inserido via js/script.js -->
+                <h1 class="home_title">
+                    <span id="typewriter-text">Olá, me chamo Patrícia,<br> sou desenvolvedora<br> </span>
+                </h1>
+                <!-- CTA para contato: mantém mesma aparência em todas as páginas -->
+                <a href="contato.html" class="home-button">Entre em contato</a>
+           </div>
+
+           <div class="home_social">
+                 <a href="" class="home_social-icon"><i class='bx bxl-gitlab' ></i></a>
+                 <a href="" class="home_social-icon"><i class='bx bxl-instagram' ></i></a>
+                 <a href="" class="home_social-icon"><i class='bx bxl-linkedin' ></i></a>
+           </div>
+
+          
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
